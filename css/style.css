@@ -26,7 +26,9 @@ html {
     font-family: andale mono, monospace;
     font-size: 20px;
     color: #ffead0;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
 }
 
 .main {
@@ -60,9 +62,33 @@ html {
     text-align: center;
     color: #113537;
 }
+a {
+    color:#96616b
+}
+
+a:hover{
+    color:#f76f8e;
+}
 
 .button {
     display:block;
+}
+
+.navhome {
+    padding-top: 70px;
+    text-align: center; 
+}
+
+.navphoto {
+    padding: 20px;
+    place-items: center;
+    text-align: center; 
+}
+
+.navlink {
+    padding:5px;
+    place-items: center;
+    text-align: center; 
 }
 
 @media (max-width: 600px) {
