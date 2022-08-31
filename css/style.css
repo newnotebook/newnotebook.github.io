@@ -54,4 +54,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
+    grid-template-areas: 
+        "box-1 box-2"
+        "box-3 box-4";
 }
