@@ -1,10 +1,25 @@
 body {
     height: 100%;
     margin: 0;
+    background: linear-gradient(-45deg, #40559c, #d955c0, #8556b3, #d4b7f0);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
 }
 
 html {
     height: 100%;
+}
+  
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 30%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .page {
@@ -92,7 +107,6 @@ a:hover{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     place-items: center;
-    background: #fef9ff;
 }
 
 .box {
@@ -149,7 +163,6 @@ a:hover{
     place-items: center;
     display: grid;
     font-family: andale mono, monospace;
-    background: #fef9ff;
 }
 
 .contact-header h2{
@@ -169,8 +182,6 @@ a:hover{
     display: grid;
     place-content: start space-evenly;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr; */
-    background: #fef9ff;
 }
   /* Style inputs */
   input[type=text], select, textarea {
