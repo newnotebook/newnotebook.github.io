@@ -43,11 +43,6 @@ a:hover{
     text-align: center; 
 }
 
-.fa-clickable {
-    cursor:pointer;
-    outline:none;
-}
-
 .navhome{
     display:block;
     padding-top: 150px;
