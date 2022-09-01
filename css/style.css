@@ -199,6 +199,13 @@ a:hover{
   input[type=submit]:hover {
     background-color: #F76F8E;
   }
+
+  .col {
+    text-align: center;
+    width:80%;
+    padding: 20px;
+    padding-bottom:250px;
+  }
   
   .column {
     width:80%;
