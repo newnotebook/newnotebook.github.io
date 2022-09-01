@@ -1,25 +1,19 @@
 body {
     height: 100%;
     margin: 0;
-    background: linear-gradient(-45deg, #40559c, #d955c0, #8556b3, #d4b7f0);
+    background: linear-gradient(-45deg, #40559c, #e28cd3, #8556b3, #d4b7f0);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
 }
 
-html {
-    height: 100%;
+@keyframes gradient {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 30% }
+    100% { background-position: 0% 50% }
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 30%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+html {
+    height: 100%;
 }
 
 .page {
@@ -63,7 +57,6 @@ a:hover{
     flex-wrap: wrap;
     place-items: center;
     text-align: center; 
-
 }
 
 i{
@@ -90,7 +83,6 @@ i{
 .navlink {
     padding: 20px;
 }
-
 
 .hide {
     padding-left:30px;
@@ -195,13 +187,17 @@ i{
     grid-template-columns: 1fr 1fr;
 }
   /* Style inputs */
-input[type=text], select, textarea {
+input[type=text], input[type=email], select, textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    padding: 10px;
+    border: 1px solid #858AE3;
+    margin-top: 10px;
+    margin-bottom: 10px;
     resize: vertical;
+}
+
+option value {
+    color:red
 }
   
 input[type=submit] {
