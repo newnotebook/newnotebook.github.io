@@ -280,6 +280,39 @@ input[type=submit]:hover {
     100% { opacity:1 }
   }
 
+.fade-in-slow {
+    animation: fadeIn ease 15s;
+    -webkit-animation: fadeIn ease 15s;
+    -moz-animation: fadeIn ease 15s;
+    -o-animation: fadeIn ease 15s;
+    -ms-animation: fadeIn ease 15s;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity:0 }
+    100% { opacity:1 }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity:0 }
+    100% { opacity:1 }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity:0 }
+    100% { opacity:1 }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity:0 }
+    100% { opacity:1 }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity:0 }
+    100% { opacity:1 }
+  }
+
 /* Start https://www.cursors-4u.com */ 
 * {cursor: url(https://ani.cursors-4u.net/cursors/cur-11/cur1072.ani), 
     url(https://ani.cursors-4u.net/cursors/cur-11/cur1072.png), 
