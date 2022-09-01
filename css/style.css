@@ -1,7 +1,7 @@
 body {
     height: 100%;
     margin: 0;
-    background: linear-gradient(-45deg, #40559c, #e28cd3, #8556b3, #d4b7f0);
+    background: linear-gradient(-45deg, #637ed7, #e28cd3, #a47ace, #b7d5f0);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
 }
@@ -32,6 +32,14 @@ a:hover{
     color:#f76f8e;
 }
 
+i{
+    color: #fef9ff; 
+}
+
+i:hover{
+    color:#f76f8e;
+}
+
 .fa {
     color: #fef9ff;
 }
@@ -46,7 +54,7 @@ a:hover{
     -webkit-box-shadow: -3px 0px 20px 9px rgba(0,0,0,0.52);
     -moz-box-shadow: -3px 0px 20px 9px rgba(0,0,0,0.52);
 }
-
+ 
 .sidebar a {
     text-decoration: none;
     font-size: 15px;
@@ -57,10 +65,6 @@ a:hover{
     flex-wrap: wrap;
     place-items: center;
     text-align: center; 
-}
-
-i{
-    color: #fef9ff; 
 }
 
 .navhome{
@@ -81,7 +85,14 @@ i{
 }
 
 .navlink {
+    font-family: andale mono, monospace;;
     padding: 20px;
+}
+
+.linkspan:hover>i{color:#f76f8e;}
+
+.linkspan:hover>span{
+    color:#f76f8e;
 }
 
 .hide {
@@ -142,11 +153,6 @@ i{
     left: 57%;
 } 
 
-/* @media (max-width: 600px) {
-    .main {
-      display: block;
-    }
-  } */
 @media screen and (max-width: 600px) {
     .box, .bam-vampire {
         width: 100%;
@@ -156,7 +162,7 @@ i{
 
 * {
     box-sizing: border-box;
-  }
+}
   
 .main-contact {
     color: #113537;
@@ -196,14 +202,10 @@ input[type=text], input[type=email], select, textarea {
     resize: vertical;
 }
 
-option value {
-    color:red
-}
-  
 input[type=submit] {
     background-color: #858AE3;
     color: white;
-    padding: 12px 20px;
+    padding: 20px;
     border: none;
     cursor: pointer;
 }
@@ -218,14 +220,14 @@ input[type=submit]:hover {
     -moz-box-shadow: 8px 7px 10px 1px rgba(0,0,0,0.32);
 }
 
-.col {
+.edward-message {
     text-align: center;
     width:80%;
     padding: 20px;
     padding-bottom:250px;
 }
   
-.column {
+.the-form {
     width:80%;
     padding: 20px;
     border:3px solid #613DC1;
@@ -235,9 +237,9 @@ input[type=submit]:hover {
 }
 
   
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .column, input[type=submit] {
+    .the-form, input[type=submit] {
       width: 100%;
       margin-top: 0;
     }
